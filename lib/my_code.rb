@@ -25,3 +25,12 @@ end
 def map_to_no_change(source_array)
   source_array
 end
+
+def reduce_to_total(source_array)
+  total = 0
+  source_array.length.times do |index|
+    total += source_array[index]
+  end
+  
+  return total
+end
